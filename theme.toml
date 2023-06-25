@@ -1,0 +1,10 @@
+name = "socio"
+description = "Open source theme for Koncepto Sociala website"
+license = "Unlicense"
+homepage = "https://github.com/konceptosociala/socio"
+# The minimum version of Zola required
+min_version = "0.17.2"
+
+[author]
+name = "Oleksandr Hnutov"
+homepage = "https://konceptosociala.eu.org/"

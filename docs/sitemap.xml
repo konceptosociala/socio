@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://konceptosociala.eu.org/</loc>
+    </url>
+    <url>
+        <loc>https://konceptosociala.eu.org/blog/</loc>
+    </url>
+    <url>
+        <loc>https://konceptosociala.eu.org/blog/some-other-post/</loc>
+        <lastmod>1970-01-01</lastmod>
+    </url>
+    <url>
+        <loc>https://konceptosociala.eu.org/blog/some-post/</loc>
+        <lastmod>2023-06-25</lastmod>
+    </url>
+</urlset>
