@@ -7,3 +7,4 @@ build_search_index = true
 highlight_code = true
 
 [extra]
+favicon = "img/socio.svg"

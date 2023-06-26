@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://konceptosociala.eu.org/sitemap.xml
+Sitemap: https://konceptosociala.eu.org/socio/sitemap.xml
