@@ -13,10 +13,10 @@ socio_logo = "img/socio.svg"
 
 socio_navbar_links = [
     { title = "Home", link = "/" },
-    { title = "Blog", link = "/blog" },
+    { title = "Blog", link = "blog" },
     { title = "Disabled" },
     { title = "About", dropdown = [
-        ["Info", "/info"],
+        ["Info", "info"],
         ["Socio on GitHub", "https://github.com/konceptosociala/socio"]
     ] }
 ]
