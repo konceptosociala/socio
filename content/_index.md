@@ -4,7 +4,7 @@ paginate_by = 3
 sort_by = "date"
 +++
 
-{% section(color="#FF2E00", type="curve") %}
+{% section(color="#F34E00", type="curve") %}
 
 # First section
 

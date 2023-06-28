@@ -2,11 +2,33 @@
 
 * {
     font-family: 'Ubuntu', sans-serif;
-    color: whitesmoke;
+    box-sizing: border-box;
+    color: var(--socio-text-color);
+}
+
+a {
+    color: var(--socio-link-color);
 }
 
 h1 {
     font-weight: 700;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small-hr {
+    border-bottom: 5px solid white;
+    border-radius: 25px;
+    width: 100px;
+    opacity: 1;
+}
+
+.big-hr {
+    border-bottom: 3px solid white;
+    border-radius: 25px;
+    opacity: 1;
 }
 
 /* HEADER */
@@ -14,12 +36,11 @@ h1 {
 header {
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 100;
 }
 
 .navbar {
     padding: 20px;
-    background-color: #08090A !important;
     transition: all 0.4s;
 }
 
@@ -36,11 +57,11 @@ header {
     height: 36px;
 }
 
-.curve-header .shape-fill {
-    fill: #08090A;
-}
-
 /* CONTENT */
+
+.post-link {
+    text-decoration: none;
+}
 
 .content {
     padding-top: 136px;
@@ -51,6 +72,7 @@ header {
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    max-width: 100%;
 }
 
 .curve-section svg {
@@ -61,9 +83,9 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    .curve-section svg {
-        width: 300%;
-        transform: translateX(-33.3%);
+    .arrow {
+        transform: scaleX(2.0);
+        translate: -50%;
     }
 }
 

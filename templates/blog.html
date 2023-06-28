@@ -1,12 +1,19 @@
-{% extends "base.html" %}
+{% extends "page.html" %}
+.
+{% block page_content %}
+<div class="row">
+    {% for page in section.pages %}
+    <div class="col-lg-6 col-md-12 col-sm-12 p-2 d-flex">
+        <a class="post-link d-flex w-100" href="{{ page.permalink | safe }}">
+            <div class="bg-dark px-4 py-3 rounded-4 w-100">
+                <h1>{{ page.title }}</h1>
+                <hr class="big-hr">
+                {{ page.content | truncate(length=180) | safe }}
+                <strong>[Read more]</strong>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
 
-{% block content %}
-<h1 class="title">
-  {{ section.title }}
-</h1>
-<ul>
-  {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-  {% endfor %}
-</ul>
-{% endblock content %}
+{% endblock %}
