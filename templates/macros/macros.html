@@ -1,0 +1,7 @@
+{% macro get_url_check(path) %}
+    {% if path is starting_with("http://") or path is starting_with("https://") %}
+        {{ path | safe }}
+    {% else %}
+        {{ get_url(path=path) | safe }}
+    {% endif %}
+{% endmacro input %}

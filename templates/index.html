@@ -5,7 +5,7 @@
 {% if config.extra.socio_banner_display == true %}
 <section class="section pt-5" style="background: #423E3B;">
     <div class="container content d-flex justify-content-center flex-column align-items-center">
-        <img class="m-3" src="{{ config.extra.socio_banner_logo }}" alt="" width={{ config.extra.socio_banner_logo_width }}>
+        <img class="m-3" src="{{ macros::get_url_check(path=config.extra.socio_banner_logo) }}" alt="" width="{{ config.extra.socio_banner_logo_width }}">
         <h1 class="display-3">{{ config.extra.socio_banner_heading }}</h1>
         <p class="h3">{{ config.extra.socio_banner_descr }}</p>
         <a class="btn btn-primary m-3" href="#">Learn more</a>
