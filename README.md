@@ -3,9 +3,9 @@
 Zola theme for Koncepto Sociala website
 
 Todolist:
-- [ ] Main layout
+- [x] Main layout
+- [x] Blog
 - [ ] Multilingualism
 - [ ] Search
-- [ ] Blog
 - [ ] Comments with [`utterances`](https://utteranc.es/)
 - [ ] Documentation

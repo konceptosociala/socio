@@ -89,13 +89,20 @@
             <a href="/" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
                 <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
             </a>
-            <span class="mb-3 mb-md-0 text-light">{{ config.extra.socio_title | default(value='My Site') }} © 2023</span>
+            <span class="text-light">{{ config.extra.socio_title | default(value='My Site') }} © 2023</span>
         </div>
       
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-            <li class="ms-3"> <a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        <ul class="nav p-3 col-md-4 justify-content-end list-unstyled d-flex">
+            {% if config.extra.socio_github -%}     <li class="ms-3"><a title="GitHub" class="fa fa-github social" href="{{ config.extra.socio_github }}"></a></li>{% endif %}
+            {% if config.extra.socio_mail -%}       <li class="ms-3"><a title="E-mail" class="fa fa-email-bulk social" href="{{ config.extra.socio_mail }}"></a></li>{% endif %}
+            {% if config.extra.socio_telegram -%}   <li class="ms-3"><a title="Telegram" class="fa fa-telegram social" href="{{ config.extra.socio_telegram }}"></a></li>{% endif %}
+            {% if config.extra.socio_discord -%}    <li class="ms-3"><a title="Discord" class="fa fa-discord social" href="{{ config.extra.socio_discord }}"></a></li>{% endif %}
+            {% if config.extra.socio_facebook -%}   <li class="ms-3"><a title="Facebook" class="fa fa-facebook social" href="{{ config.extra.socio_facebook }}"></a></li>{% endif %}
+            {% if config.extra.socio_insta -%}      <li class="ms-3"><a title="Instagram" class="fa fa-instagram social" href="{{ config.extra.socio_insta }}"></a></li>{% endif %}
+            {% if config.extra.socio_linkedin -%}   <li class="ms-3"><a title="LinkedIn" class="fa fa-linkedin social" href="{{ config.extra.socio_linkedin }}"></a></li>{% endif %}
+            {% if config.extra.socio_reddit -%}     <li class="ms-3"><a title="Reddit" class="fa fa-reddit social" href="{{ config.extra.socio_reddit }}"></a></li>{% endif %}
+            {% if config.extra.socio_twitter -%}    <li class="ms-3"><a title="Twitter" class="fa fa-twitter social" href="{{ config.extra.socio_twitter }}"></a></li>{% endif %}
+            {% if config.extra.socio_youtube -%}    <li class="ms-3"><a title="YouTube" class="fa fa-youtube social" href="{{ config.extra.socio_youtube }}"></a></li>{% endif %}
         </ul>
     </footer> 
 
