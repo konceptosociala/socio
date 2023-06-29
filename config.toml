@@ -49,6 +49,7 @@ socio_link_color = "#F5F5F5"
 socio_code_color = "#F5F5F5"
 socio_code_bg = "#2b303b"
 
+socio_post_bg = "#423e3b"
 socio_header_bg = "#08090A"
 socio_footer_bg = "#423e3b"
 socio_404_bg = "#F34E00"
