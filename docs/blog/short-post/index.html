@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" style="
     --socio-text-color: #F5F5F5;
-    --socio-link-color: #F5F5F5;">
+    --socio-link-color: #F5F5F5;
+    --socio-code-color: #F5F5F5;
+    --socio-code-bg: #2b303b;
+">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,7 +105,7 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-warning" type="submit">Search</button>
+                        <button class="fa fa-search btn btn-outline-light" aria-hidden="true" type="submit"></button>
                     </form>
                 </div>
             </div>
@@ -117,15 +120,29 @@
     </header>
 
     
-<h1 class="title">
-  Short
-</h1>
-<p class="subtitle"><strong>1970-01-01</strong></p>
-<p>Quas commodi eum veritatis assumenda vero</p>
+<section class="section" style="background: #F34E00;">
+    <div class="container content" style="min-height: 90vh;">
+        
+        
+<div class="post px-lg-5 mx-lg-5 mt-3">
+    <p class="date">~~ 1970-01-01 ~~</p>
+    <h1 class="title">Short</h1>
+    <hr class="big-hr">
+    <p>Quas commodi eum veritatis assumenda vero</p>
+
+</div>
+
+        
+    </div>
+    <div class="curve-section">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" style="fill: #F34E00"></path>
+        </svg>
+    </div>
+</section>
 
 
-
-    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center" style="background: #423e3b">
         <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
                 <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>

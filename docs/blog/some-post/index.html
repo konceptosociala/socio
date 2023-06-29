@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" style="
     --socio-text-color: #F5F5F5;
-    --socio-link-color: #F5F5F5;">
+    --socio-link-color: #F5F5F5;
+    --socio-code-color: #F5F5F5;
+    --socio-code-bg: #2b303b;
+">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,7 +105,7 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-warning" type="submit">Search</button>
+                        <button class="fa fa-search btn btn-outline-light" aria-hidden="true" type="submit"></button>
                     </form>
                 </div>
             </div>
@@ -117,16 +120,43 @@
     </header>
 
     
-<h1 class="title">
-  Some post
-</h1>
-<p class="subtitle"><strong>2023-06-25</strong></p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic saepe, in ad similique, modi debitis id mollitia reiciendis totam nostrum sapiente vitae nulla eum, ex ab doloremque repudiandae atque aut ducimus possimus eaque. Corporis impedit earum, laudantium accusamus suscipit odio dolores neque. Fugiat labore sit, eligendi ut, quaerat laborum maiores et hic architecto quidem, aspernatur deleniti. </p>
+<section class="section" style="background: #F34E00;">
+    <div class="container content" style="min-height: 90vh;">
+        
+        
+<div class="post px-lg-5 mx-lg-5 mt-3">
+    <p class="date">~~ 2023-06-25 ~~</p>
+    <h1 class="title">Some post</h1>
+    <hr class="big-hr">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic saepe, in ad similique, modi debitis id mollitia reiciendis totam nostrum sapiente vitae nulla eum, ex ab doloremque repudiandae atque aut ducimus possimus eaque. Corporis impedit earum, laudantium accusamus suscipit odio dolores neque. <code>Fugiat labore sit, eligendi ut</code>, quaerat laborum maiores et hic architecto quidem, aspernatur deleniti. </p>
 <p>Incidunt voluptate nam blanditiis repellendus aliquam optio quos dolores culpa deserunt, sint cupiditate suscipit non perferendis praesentium quidem, amet eaque, quam sequi dolore sed ipsum minima corporis veniam. Vel voluptatum sapiente quisquam ratione saepe officia aliquam animi exercitationem numquam reprehenderit. Architecto, distinctio? Libero, doloremque.</p>
+<pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#b48ead;">use </span><span>std::error::Error;
+</span><span style="color:#b48ead;">use </span><span>glob::glob;
+</span><span>
+</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">main</span><span>() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
+</span><span>    </span><span style="color:#b48ead;">for</span><span> item in </span><span style="color:#96b5b4;">glob</span><span>(&quot;</span><span style="color:#a3be8c;">**/*.txt</span><span>&quot;)?{
+</span><span>        println!(&quot;</span><span style="color:#d08770;">{}</span><span>&quot;, item?.</span><span style="color:#96b5b4;">display</span><span>());
+</span><span>    }
+</span><span>
+</span><span>    Ok(())
+</span><span>}
+</span></code></pre>
+<pre data-lang="sh" style="background-color:#2b303b;color:#c0c5ce;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#bf616a;">$</span><span> sudo apt install blender</span><span style="color:#bf616a;"> --full -y
+</span></code></pre>
+
+</div>
+
+        
+    </div>
+    <div class="curve-section">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill" style="fill: #F34E00"></path>
+        </svg>
+    </div>
+</section>
 
 
-
-    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center" style="background: #423e3b">
         <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
                 <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>

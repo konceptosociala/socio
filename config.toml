@@ -5,6 +5,7 @@ build_search_index = true
 
 [markdown]
 highlight_code = true
+highlight_theme = "base16-ocean-dark"
 
 [extra]
 # General
@@ -33,11 +34,17 @@ socio_banner_descr = "Simple. Libre. Humane"
 # Colors
 socio_text_color = "#F5F5F5"
 socio_link_color = "#F5F5F5"
+socio_code_color = "#F5F5F5"
+socio_code_bg = "#2b303b"
+
 socio_header_bg = "#08090A"
+socio_footer_bg = "#423e3b"
 socio_404_bg = "#F34E00"
 socio_page_bg = "#F34E00"
 socio_banner_bg = "#423E3B"
-socio_banner_btn = "" # TODO: banner button color
+
+socio_banner_btn = "success"   # Bootstrap value (primary, info etc.)
+socio_search_btn = "light"     # or custom for `btn-*` class
 
 # Misc
 socio_forkme = { enabled = true, repo = "https://github.com/konceptosociala/socio", label = "Fork me on GitHub"}

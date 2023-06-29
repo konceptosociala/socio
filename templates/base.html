@@ -2,7 +2,10 @@
 <!DOCTYPE html>
 <html lang="en" style="
     --socio-text-color: {{ config.extra.socio_text_color }};
-    --socio-link-color: {{ config.extra.socio_link_color }};">
+    --socio-link-color: {{ config.extra.socio_link_color }};
+    --socio-code-color: {{ config.extra.socio_code_color }};
+    --socio-code-bg: {{ config.extra.socio_code_bg }};
+">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,7 +68,7 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-warning" type="submit">Search</button>
+                        <button class="fa fa-search btn btn-outline-{{ config.extra.socio_search_btn }}" aria-hidden="true" type="submit"></button>
                     </form>
                 </div>
             </div>
@@ -81,7 +84,7 @@
 
     {% block content %} {% endblock %}
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center" style="background: {{ config.extra.socio_footer_bg }}">
         <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
                 <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
