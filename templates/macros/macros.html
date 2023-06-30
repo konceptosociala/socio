@@ -5,3 +5,15 @@
         {{ get_url(path=path) | safe }}
     {% endif %}
 {% endmacro get_url_check %}
+
+{% macro get_url_check_lang(path) %}
+    {% if path is starting_with("http://") or path is starting_with("https://") %}
+        {{ path | safe }}
+    {% else %}
+        {% if lang == config.default_language %}
+            {{ get_url(path=path) |  safe }}
+        {% else %}
+            {{ get_url(path=lang ~ '/' ~ path | replace(from="//", to="/")) | safe }}
+        {% endif %}
+    {% endif %}
+{% endmacro get_url_check %}

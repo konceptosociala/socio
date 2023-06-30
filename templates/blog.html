@@ -9,7 +9,7 @@
                 <h1>{{ page.title }}</h1>
                 <hr class="big-hr">
                 {{ page.content | truncate(length=180) | safe }}
-                <strong>[Read more]</strong>
+                <strong>[{{ trans(key="read_more", lang=lang) }}]</strong>
             </div>
         </a>
     </div>

@@ -1,6 +1,7 @@
 base_url = "https://konceptosociala.eu.org/socio"
 compile_sass = true
 output_dir = "docs"
+default_language = "en"
 build_search_index = true
 
 [markdown]
@@ -15,12 +16,12 @@ socio_logo = "/img/socio.svg"
 
 # Navbar links
 socio_navbar_links = [
-    { title = "Home", link = "/" },
-    { title = "Blog", link = "/blog/" },
-    { title = "Disabled" },
-    { title = "About", dropdown = [
-        ["Info", "/info/"],
-        ["Socio on GitHub", "https://github.com/konceptosociala/socio"]
+    { title = "home", link = "/" },
+    { title = "blog", link = "/blog/" },
+    { title = "disabled" },
+    { title = "about", dropdown = [
+        ["info", "/info/"],
+        ["socio_on_github", "https://github.com/konceptosociala/socio"]
     ] }
 ]
 
@@ -28,8 +29,6 @@ socio_navbar_links = [
 socio_banner_display = true
 socio_banner_logo = "/img/socio_favicon_variant.svg"
 socio_banner_logo_width = 144
-socio_banner_heading = "Socio Zola Theme"
-socio_banner_descr = "Simple. Libre. Humane"
 
 # Social (comment to hide)
 socio_github = "https://github.com/konceptosociala/socio"
@@ -58,6 +57,38 @@ socio_banner_bg = "#423E3B"
 
 socio_banner_btn = "success"   # Bootstrap value (primary, info etc.)
 socio_search_btn = "light"     # or custom for `btn-*` class
+socio_back_btn = "dark"        # Example: .btn-myownclass
 
 # Misc
 socio_forkme = { enabled = true, repo = "https://github.com/konceptosociala/socio", label = "Fork me on GitHub"}
+socio_language_switcher_enabled = true
+
+[translations]
+search = "Search"
+read_more = "Read more"
+banner_button = "Learn more"
+banner_heading = "Socio Zola Theme"
+banner_descr = "Simple. Libre. Humane"
+
+home = "Home"
+blog = "Blog"
+disabled = "Disabled"
+about = "About"
+info = "Info"
+socio_on_github = "Socio on GitHub"
+
+[languages.ua]
+
+[languages.ua.translations]
+search = "Пошук"
+read_more = "Читати далі"
+banner_button = "Дізнатися більше"
+banner_heading = "Socio тема для Zola"
+banner_descr = "Проста. Вільна. Людяна"
+
+home = "Головна"
+blog = "Блог"
+disabled = "Відключено"
+about = "Про нас"
+info = "Інформація"
+socio_on_github = "Socio на GitHub"

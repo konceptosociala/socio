@@ -6,9 +6,9 @@
 <section class="section pt-5" style="background: {{ config.extra.socio_banner_bg }};">
     <div class="container content d-flex justify-content-center flex-column align-items-center">
         <img class="m-3" src="{{ macros::get_url_check(path=config.extra.socio_banner_logo) }}" alt="" width="{{ config.extra.socio_banner_logo_width }}">
-        <h1 class="display-3">{{ config.extra.socio_banner_heading }}</h1>
-        <p class="h3">{{ config.extra.socio_banner_descr }}</p>
-        <a class="btn btn-{{ config.extra.socio_banner_btn }} m-3" href="#">Learn more</a>
+        <h1 class="display-3">{{ trans(key="banner_heading", lang=lang) }}</h1>
+        <p class="h3">{{ trans(key="banner_descr", lang=lang) }}</p>
+        <a class="btn btn-{{ config.extra.socio_banner_btn }} m-3" href="#learn-more">{{ trans(key="banner_button", lang=lang) }}</a>
     </div>
     <div class="curve-section">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -16,6 +16,7 @@
         </svg>
     </div>
 </section>
+<a id="learn-more"></a>
 {% endif %}
 
 {{ section.content | safe }}
