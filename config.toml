@@ -25,6 +25,12 @@ socio_navbar_links = [
     ] }
 ]
 
+# Multilingualism (uncomment to enable language switcher)
+socio_languages = [
+    { code = "default", name = "English", flag = "us" },
+    { code = "ua", name = "Українська", flag = "ua" },
+]
+
 # Homepage banner
 socio_banner_display = true
 socio_banner_logo = "/img/socio_favicon_variant.svg"
@@ -61,7 +67,6 @@ socio_back_btn = "dark"        # Example: .btn-myownclass
 
 # Misc
 socio_forkme = { enabled = true, repo = "https://github.com/konceptosociala/socio", label = "Fork me on GitHub"}
-socio_language_switcher_enabled = true
 
 [translations]
 search = "Search"

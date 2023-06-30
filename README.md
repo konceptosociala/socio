@@ -7,7 +7,7 @@ Todolist:
 - [x] Blog
 - [x] Multilingualism
     - [x] Easy translation
-    - [ ] Language switcher
+    - [x] Language switcher
 - [ ] Search
 - [ ] Comments with [`utterances`](https://utteranc.es/)
 - [ ] Documentation (TODO)
