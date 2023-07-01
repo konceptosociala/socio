@@ -10,7 +10,7 @@ Thanks for `README` template to [adidoks](https://github.com/aaranxu/adidoks)
 
 ## Requirements
 
-Before using the theme, you need to install the [Zola](https://www.getzola.org/documentation/getting-started/installation/) ≥ 0.15.0.
+Before using the theme, you need to install the [Zola](https://www.getzola.org/documentation/getting-started/installation/) ≥ 0.17.2.
 
 ## Quick Start
 
