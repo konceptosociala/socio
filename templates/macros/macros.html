@@ -17,3 +17,10 @@
         {% endif %}
     {% endif %}
 {% endmacro get_url_check %}
+
+{% macro remove_lang_code(path, codes) %}
+    {% for code in codes %}
+        {% if match_pattern() %}
+        {% endif %}
+    {% endfor %}
+{% endmacro remove_lang_code %}

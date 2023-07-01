@@ -110,7 +110,8 @@ header {
     margin: 0;
 }
 
-.post p code {
+.post p code,
+.post li code {
     padding: 3px;
     border-radius: 5px;
     color: var(--socio-code-color);
