@@ -74,22 +74,11 @@
                                 <span class="d-lg-none text-uppercase"> {{ lang }}</span>
                             </a>
                             <ul class="dropdown-menu">
+                                {% set new_path = macros::remove_lang_code(path=current_path, languages=config.extra.socio_languages) %}
                                 {% for language in config.extra.socio_languages %}
-                                    {% if language.code == "default" %}
-                                        {% set_global new_path = current_path %}
-                                        {% for l in config.extra.socio_languages %}
-                                            {% if l.code != "default" %}
-                                                {% set_global new_path = new_path | replace(from="/"~l.code, to="") | replace(from=l.code~"/", to="") %}
-                                            {% endif %}
-                                        {% endfor %}
+                                    {% if language.code == "default" %}                                             
                                         {% set new_url = get_url(path=new_path, lang=config.default_language) %}
                                     {% else %}
-                                        {% set_global new_path = current_path %}
-                                        {% for l in config.extra.socio_languages %}
-                                            {% if l.code != "default" %}
-                                                {% set_global new_path = new_path | replace(from="/"~l.code, to="") | replace(from=l.code~"/", to="") %}
-                                            {% endif %}
-                                        {% endfor %}                                    
                                         {% set new_url = get_url(path=new_path, lang=language.code) | replace(from="/"~language.code~"//", to="/"~language.code~"/") %}
                                     {% endif %}
                                     <li><a class="dropdown-item" href="{{ new_url }}">
