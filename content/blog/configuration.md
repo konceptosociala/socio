@@ -89,11 +89,14 @@ Configure color palette of your website
 * `socio_404_bg` - 404 error page background color
 * `socio_page_bg` - default page color
 * `socio_banner_bg` - homepage banner background color
+* `socio_pill_bg` - pill shortcode background color (bootstrap color class)
+* `socio_project_bg` - project shortcode background color (bootstrap color class)
 
 #### Buttons
 
 For now buttons are **bootstrap-styled only**, so you should use bootstrap color class names like `primary`, `success`, `light` etc. Or you can make own `btn-*` class and put a value in place of `*`.
 
+* `socio_pill_btn` - pill shortcode **"Read more"** button color
 * `socio_banner_btn` - homepage banner **"Learn more"** button color
 * `socio_search_btn` - header search button color
 * `socio_back_btn` - 404 error page **"Go back"** button color

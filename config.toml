@@ -62,6 +62,9 @@ socio_404_bg = "#F34E00"
 socio_page_bg = "#F34E00"
 socio_banner_bg = "#423E3B"
 
+socio_pill_bg = "dark"
+socio_project_bg = "dark"
+socio_pill_btn = "primary"
 socio_banner_btn = "success"   # Bootstrap value (primary, info etc.)
 socio_search_btn = "light"     # or custom for `btn-*` class
 socio_back_btn = "dark"        # Example: .btn-myownclass
