@@ -23,9 +23,6 @@
     <meta name="twitter:title" content="{{ macros::get_page_title() }}">
     <meta name="twitter:description" content="{{ macros::get_page_description() }}">
     <meta name="twitter:image" content="{{ macros::get_url_check(path=config.extra.socio_favicon) }}">
-  
-  
-
 
     {% if config.extra.socio_forkme.enabled %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
@@ -104,10 +101,6 @@
                         </li>
                         {% endif %}
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="{{ trans(key='search', lang=lang) }}" aria-label="{{ trans(key='search', lang=lang) }}">
-                        <button class="fa fa-search btn btn-outline-{{ config.extra.socio_search_btn }}" aria-hidden="true" type="submit"></button>
-                    </form>
                 </div>
             </div>
         </nav>

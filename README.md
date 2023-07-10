@@ -76,6 +76,9 @@ cp -r themes/socio/content .
 You can modify or add new posts in the `content/blog` or other
 content directories as needed.
 
+Also you can use builtin **shortcodes**, that may help you make a good
+webpage layout faster. Read more [here](https://konceptosociala.eu.org/socio/blog/shortcodes/)
+
 ### Step 5: Run the project
 
 Just run `zola serve` in the root path of the project:
@@ -100,6 +103,7 @@ So it is a public domain and you can use it as you wish.
 - [x] Multilingualism
     - [x] Easy translation
     - [x] Language switcher
-- [ ] Search
-- [ ] Comments with [`utterances`](https://utteranc.es/)
-- [ ] Documentation (TODO)
+- [x] Comments with [`utterances`](https://utteranc.es/)
+- [x] Documentation
+    - [x] Configuration
+    - [ ] Shortcodes

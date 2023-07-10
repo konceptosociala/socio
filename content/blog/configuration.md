@@ -98,7 +98,6 @@ For now buttons are **bootstrap-styled only**, so you should use bootstrap color
 
 * `socio_pill_btn` - pill shortcode **"Read more"** button color
 * `socio_banner_btn` - homepage banner **"Learn more"** button color
-* `socio_search_btn` - header search button color
 * `socio_back_btn` - 404 error page **"Go back"** button color
 
 ## Misc
@@ -117,7 +116,6 @@ Socio as well as many other themes supports Zola multilingual sites.
     ```toml
     [translations]
     # required theme keys
-    search = "Search"
     project_page = "Project page"
     read_more = "Read more"
     banner_button = "Learn more"
@@ -134,7 +132,6 @@ Socio as well as many other themes supports Zola multilingual sites.
     [languages.ua]
 
     [languages.ua.translations]
-    search = "Пошук"
     project_page = "Сторінка проєкту"
     read_more = "Читати далі"
     banner_button = "Дізнатися більше"
@@ -144,7 +141,6 @@ Socio as well as many other themes supports Zola multilingual sites.
     [languages.sr]
 
     [languages.sr.translations]
-    search = "Pretraga"
     project_page = "Stranica projekta"
     read_more = "Opširnije"
     banner_button = "Saznajte više"
@@ -223,3 +219,11 @@ Socio as well as many other themes supports Zola multilingual sites.
     * `_index.sr.md`
 
 For more detailed guide follow [the official Zola documentation](https://www.getzola.org/documentation/content/multilingual/).
+
+# Comments with [`utterances`](https://utteranc.es)
+
+You can enable your blog posts comments by adding `[extra.socio_utterances]` section to your config toml:
+
+* `label` - GitHub issue label for comments (optional)
+* `repo` - GitHub repo in format `organization/example_repo`
+* `theme` - utterances theme. Look at [official website](https://utteranc.es/) for a full list

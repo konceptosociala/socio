@@ -41,9 +41,6 @@ socio_title - main website title, which is visible in title bar a…">
         https://konceptosociala.eu.org/socio/img/socio_favicon.svg
     
 ">
-  
-  
-
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
@@ -193,10 +190,6 @@ socio_title - main website title, which is visible in title bar a…">
                         </li>
                         
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="fa fa-search btn btn-outline-light" aria-hidden="true" type="submit"></button>
-                    </form>
                 </div>
             </div>
         </nav>
@@ -312,7 +305,6 @@ socio_title - main website title, which is visible in title bar a…">
 <ul>
 <li><code>socio_pill_btn</code> - pill shortcode <strong>&quot;Read more&quot;</strong> button color</li>
 <li><code>socio_banner_btn</code> - homepage banner <strong>&quot;Learn more&quot;</strong> button color</li>
-<li><code>socio_search_btn</code> - header search button color</li>
 <li><code>socio_back_btn</code> - 404 error page <strong>&quot;Go back&quot;</strong> button color</li>
 </ul>
 <h2 id="misc">Misc</h2>
@@ -328,7 +320,6 @@ socio_title - main website title, which is visible in title bar a…">
 <p>Firstly, you have to add <code>[translations]</code> section (even if your website is not multilingual), which stands for default language keys translations:</p>
 <pre data-lang="toml" style="background-color:#2b303b;color:#c0c5ce;" class="language-toml "><code class="language-toml" data-lang="toml"><span>[translations]
 </span><span style="color:#65737e;"># required theme keys
-</span><span style="color:#bf616a;">search </span><span>= &quot;</span><span style="color:#a3be8c;">Search</span><span>&quot;
 </span><span style="color:#bf616a;">project_page </span><span>= &quot;</span><span style="color:#a3be8c;">Project page</span><span>&quot;
 </span><span style="color:#bf616a;">read_more </span><span>= &quot;</span><span style="color:#a3be8c;">Read more</span><span>&quot;
 </span><span style="color:#bf616a;">banner_button </span><span>= &quot;</span><span style="color:#a3be8c;">Learn more</span><span>&quot;
@@ -344,7 +335,6 @@ socio_title - main website title, which is visible in title bar a…">
 <pre data-lang="toml" style="background-color:#2b303b;color:#c0c5ce;" class="language-toml "><code class="language-toml" data-lang="toml"><span>[languages.ua]
 </span><span>
 </span><span>[languages.ua.translations]
-</span><span style="color:#bf616a;">search </span><span>= &quot;</span><span style="color:#a3be8c;">Пошук</span><span>&quot;
 </span><span style="color:#bf616a;">project_page </span><span>= &quot;</span><span style="color:#a3be8c;">Сторінка проєкту</span><span>&quot;
 </span><span style="color:#bf616a;">read_more </span><span>= &quot;</span><span style="color:#a3be8c;">Читати далі</span><span>&quot;
 </span><span style="color:#bf616a;">banner_button </span><span>= &quot;</span><span style="color:#a3be8c;">Дізнатися більше</span><span>&quot;
@@ -354,7 +344,6 @@ socio_title - main website title, which is visible in title bar a…">
 </span><span>[languages.sr]
 </span><span>
 </span><span>[languages.sr.translations]
-</span><span style="color:#bf616a;">search </span><span>= &quot;</span><span style="color:#a3be8c;">Pretraga</span><span>&quot;
 </span><span style="color:#bf616a;">project_page </span><span>= &quot;</span><span style="color:#a3be8c;">Stranica projekta</span><span>&quot;
 </span><span style="color:#bf616a;">read_more </span><span>= &quot;</span><span style="color:#a3be8c;">Opširnije</span><span>&quot;
 </span><span style="color:#bf616a;">banner_button </span><span>= &quot;</span><span style="color:#a3be8c;">Saznajte više</span><span>&quot;
@@ -427,8 +416,25 @@ socio_title - main website title, which is visible in title bar a…">
 </li>
 </ol>
 <p>For more detailed guide follow <a href="https://www.getzola.org/documentation/content/multilingual/">the official Zola documentation</a>.</p>
+<h1 id="comments-with-utterances">Comments with <a href="https://utteranc.es"><code>utterances</code></a></h1>
+<p>You can enable your blog posts comments by adding <code>[extra.socio_utterances]</code> section to your config toml:</p>
+<ul>
+<li><code>label</code> - GitHub issue label for comments (optional)</li>
+<li><code>repo</code> - GitHub repo in format <code>organization/example_repo</code></li>
+<li><code>theme</code> - utterances theme. Look at <a href="https://utteranc.es/">official website</a> for a full list</li>
+</ul>
 
 </div>
+
+<script src="https://utteranc.es/client.js"
+        repo="konceptosociala&#x2F;konceptosociala.github.io"
+        issue-term="pathname"
+        
+        theme="icy-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
 
         
     </div>

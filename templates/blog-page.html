@@ -7,4 +7,16 @@
     <hr class="big-hr">
     {{ page.content | safe }}
 </div>
+{% if config.extra.socio_utterances %}
+<script src="https://utteranc.es/client.js"
+        repo="{{ config.extra.socio_utterances.repo }}"
+        issue-term="pathname"
+        {% if config.extra.utterances.label %}
+        label="{{ config.extra.socio_utterances.label }}"
+        {% endif %}
+        theme="{{ config.extra.socio_utterances.theme }}"
+        crossorigin="anonymous"
+        async>
+</script>
+{% endif %}
 {% endblock page_content %}

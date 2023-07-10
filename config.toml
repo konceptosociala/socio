@@ -2,7 +2,7 @@ base_url = "https://konceptosociala.eu.org/socio"
 compile_sass = true
 output_dir = "docs"
 default_language = "en"
-build_search_index = true
+build_search_index = false
 
 [markdown]
 highlight_code = true
@@ -66,14 +66,18 @@ socio_pill_bg = "dark"
 socio_project_bg = "dark"
 socio_pill_btn = "primary"
 socio_banner_btn = "success"   # Bootstrap value (primary, info etc.)
-socio_search_btn = "light"     # or custom for `btn-*` class
 socio_back_btn = "dark"        # Example: .btn-myownclass
 
 # Misc
 socio_forkme = { enabled = true, repo = "https://github.com/konceptosociala/socio", label = "Fork me on GitHub"}
 
+# Utterances
+[extra.socio_utterances]
+label = "Comment"
+repo = "konceptosociala/konceptosociala.github.io"
+theme = "icy-dark"
+
 [translations]
-search = "Search"
 project_page = "Project page"
 read_more = "Read more"
 banner_button = "Learn more"
@@ -90,7 +94,6 @@ socio_on_github = "Socio on GitHub"
 [languages.ua]
 
 [languages.ua.translations]
-search = "Пошук"
 project_page = "Сторінка проєкту"
 read_more = "Детальніше"
 banner_button = "Дізнатися більше"
@@ -107,7 +110,6 @@ socio_on_github = "Socio на GitHub"
 [languages.sr]
 
 [languages.sr.translations]
-search = "Pretraga"
 project_page = "Stranica projekta"
 read_more = "Opširnije"
 banner_button = "Saznajte više"
