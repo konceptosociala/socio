@@ -94,6 +94,26 @@ header {
 
 /* POST */
 
+.post * {
+    margin-bottom: 20px;
+}
+
+.post {
+    font-size: 18px;
+}
+
+.post img {
+    max-width: 100%;
+}
+
+.img-dashed {
+    border: 1px dashed white;
+}
+
+.img-dashed-dark {
+    border: 1px dashed #222;
+}
+
 .post pre {
     padding:15px;
     border-radius: 15px;
