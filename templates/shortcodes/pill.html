@@ -3,6 +3,6 @@
         <img class="img-fluid {% if circle == true -%}rounded-circle{%- endif -%}" src="{{ banner }}" width=512>
         <h1 class="card-title text-center mt-3">{{ title }}</h1>
         <p class="card-text mx-4 mt-2 ">{{ description }}</p>
-        <p class="text-center"><a href="{{ read_more }}" class="btn btn-{{ config.extra.socio_pill_btn }} mx-4 mb-5">Read more</a></p>
+        <p class="text-center"><a href="{{ read_more }}" class="btn btn-{{ config.extra.socio_pill_btn }} mx-4 mb-5">{{ trans(key="read_more", lang=lang) }}</a></p>
     </div>
 </div>

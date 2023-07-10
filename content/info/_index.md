@@ -1,7 +1,7 @@
 +++
 title = "Info"
-sort_by = "date"
 template = "page.html"
+page_template = "page.html"
 +++
 
 Welcome to our modern **Socio Zola theme**! Designed with simplicity and elegance in mind, our theme offers a contemporary and clean look for your static site. Whether you're a blogger, a portfolio owner, or a business showcasing your products, our theme provides a user-friendly and visually appealing experience for your visitors.

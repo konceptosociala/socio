@@ -4,19 +4,112 @@ paginate_by = 3
 sort_by = "date"
 +++
 
-{% section(color="#F34E00", type="curve") %}
+{{ section(color="#F34E00") }}
 
-# Перша секція
+# Проєкти
+<hr class="big-hr">
+<div class="row">
+    {{ 
+        project(
+            banner="https://dummyimage.com/1024x460/000/fff.gif"
+            title="Project 1", 
+            subtitle="Subtitle", 
+            description="Description",
+            project_page="#",
+            github_page="#"
+        ) 
+    }}
+    {{ 
+        project(
+            banner="https://dummyimage.com/1024x460/000/fff.gif"
+            title="Project 2", 
+            subtitle="Subtitle", 
+            description="Description",
+            project_page="#",
+            github_page="#"
+        ) 
+    }}
+    {{ 
+        project(
+            banner="https://dummyimage.com/1024x460/000/fff.gif"
+            title="Project 3", 
+            subtitle="Subtitle", 
+            description="Description",
+            project_page="#",
+            github_page="#"
+        ) 
+    }}
+</div>
 
-Лорем ипсум долор сит амет, про хабео принципес еа, еа дицат дицам рецтеяуе дуо. Пауло ноструд интеллегебат ин хас, ан виси тантас молестие яуи, еу адхуц ностер волуптатибус вим. Еам не витае медиоцрем персецути, ан вим аугуе аппетере. Еу про семпер цорпора детерруиссет. Яуо иллуд атяуи ид, ерант детрахит реферрентур ан еам, усу еуисмод цонституам цу. Усу яуем ностро цопиосае не.
+{{ endsection(color="#F34E00", type="curve") }}
+{{ section(color="#5448C8") }}
 
+# Технології
+<hr class="big-hr">
+<div class="row">
+    {{
+        pill(
+            banner="https://dummyimage.com/512x512/fff/333.gif",
+            title="Title",
+            description="Lorem ipsum dolor sit amet consecteur",
+            read_more="#",
+            circle=true
+        )
+    }}
+    {{
+        pill(
+            banner="https://dummyimage.com/512x512/fff/333.gif",
+            title="Title",
+            description="Lorem ipsum dolor sit amet consecteur",
+            read_more="#",
+            circle=true
+        )
+    }}
+    {{
+        pill(
+            banner="https://dummyimage.com/512x512/fff/333.gif",
+            title="Title",
+            description="Lorem ipsum dolor sit amet consecteur",
+            read_more="#",
+            circle=true
+        )
+    }}
+    {{
+        pill(
+            banner="https://dummyimage.com/512x512/fff/333.gif",
+            title="Title",
+            description="Lorem ipsum dolor sit amet consecteur",
+            read_more="#",
+            circle=true
+        )
+    }}
+    {{
+        pill(
+            banner="https://dummyimage.com/512x512/fff/333.gif",
+            title="Title",
+            description="Lorem ipsum dolor sit amet consecteur",
+            read_more="#",
+            circle=true
+        )
+    }}
+    {{
+        pill(
+            banner="https://dummyimage.com/512x512/fff/333.gif",
+            title="Title",
+            description="Lorem ipsum dolor sit amet consecteur",
+            read_more="#",
+            circle=true
+        )
+    }}
+    {{
+        pill(
+            banner="https://dummyimage.com/512x512/fff/333.gif",
+            title="Title",
+            description="Lorem ipsum dolor sit amet consecteur",
+            read_more="#",
+            circle=true
+        )
+    }}
+</div>
 
-{% end %}
-
-{% section(color="#5448C8", type="waves") %}
-
-# Друга секція
-
-Про ид алтера неморе инвенире, аудире маиорум нолуиссе еум но. Натум перпетуа еос ат. Нец еа нисл синт, еи сед дицит омнес фабеллас, ан меи сумо дицо дицам. Хис еа цасе нихил деленити. Еум пробо омиттантур те, ад вим яуем лаореет молестие.
-
-{% end %}
+{{ endsection(color="#5448C8", type="waves") }}

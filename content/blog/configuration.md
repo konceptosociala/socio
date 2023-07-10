@@ -118,6 +118,7 @@ Socio as well as many other themes supports Zola multilingual sites.
     [translations]
     # required theme keys
     search = "Search"
+    project_page = "Project page"
     read_more = "Read more"
     banner_button = "Learn more"
     banner_heading = "My Awesome Website"
@@ -134,6 +135,7 @@ Socio as well as many other themes supports Zola multilingual sites.
 
     [languages.ua.translations]
     search = "Пошук"
+    project_page = "Сторінка проєкту"
     read_more = "Читати далі"
     banner_button = "Дізнатися більше"
     banner_heading = "Мій прекрасний веб-сайт"
@@ -143,9 +145,10 @@ Socio as well as many other themes supports Zola multilingual sites.
 
     [languages.sr.translations]
     search = "Pretraga"
+    project_page = "Stranica projekta"
     read_more = "Opširnije"
     banner_button = "Saznajte više"
-    banner_heading = "Moj sjajni gebsite"
+    banner_heading = "Moj sjajni veb sajt"
     banner_descr = "Napravljeno s ljubavlju <3"
     ```
 

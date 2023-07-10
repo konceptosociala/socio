@@ -49,7 +49,7 @@ sort_by = "date"
 <div class="row">
     {{
         pill(
-            banner="https://dummyimage.com/512x512/fff/333.gif",
+            banner="https://dummyimage.com/1024x1024/fff/333.gif",
             title="Title",
             description="Lorem ipsum dolor sit amet consecteur",
             read_more="#",
@@ -67,7 +67,7 @@ sort_by = "date"
     }}
     {{
         pill(
-            banner="https://dummyimage.com/512x512/fff/333.gif",
+            banner="https://dummyimage.com/128x128/fff/333.gif",
             title="Title",
             description="Lorem ipsum dolor sit amet consecteur",
             read_more="#",
