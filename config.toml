@@ -74,7 +74,7 @@ socio_forkme = { enabled = true, repo = "https://github.com/konceptosociala/soci
 # Utterances
 [extra.socio_utterances]
 label = "Comment"
-repo = "konceptosociala/konceptosociala.github.io"
+repo = "konceptosociala/socio"
 theme = "icy-dark"
 
 [translations]
