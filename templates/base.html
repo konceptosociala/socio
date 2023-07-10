@@ -9,6 +9,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="{{ macros::get_page_description() }}"/>
+
+    <meta property="og:url" content="{{ current_url }}" />
+    <meta property="og:title" content="{{ macros::get_page_title() }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="{{ macros::get_page_description() }}" />
+    <meta property="og:image" content="{{ macros::get_url_check(path=config.extra.socio_favicon) }}" />
+
+    <meta property="twitter:domain" content="{{ config.base_url | trim_start_matches(pat='https://') | trim_start_matches(pat='http://') | trim_end_matches(pat='/')}}">
+    <meta property="twitter:url" content="{{ current_url }}">
+    <meta name="twitter:title" content="{{ macros::get_page_title() }}">
+    <meta name="twitter:description" content="{{ macros::get_page_description() }}">
+    <meta name="twitter:image" content="{{ macros::get_url_check(path=config.extra.socio_favicon) }}">
+  
+  
+
+
     {% if config.extra.socio_forkme.enabled %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
     {% endif %}
@@ -20,13 +38,7 @@
     <link href="{{ macros::get_url_check(path='navbar.css') | safe }}" rel="stylesheet" type="text/css">
     <link href="{{ macros::get_url_check(path='theme.css') | safe }}" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="{{ macros::get_url_check(path=config.extra.socio_favicon) }}" type="image/x-icon">
-    <title>
-        {% if page.title %}
-            {{ page.title ~ " |" }}
-        {% elif section.title %}
-            {{ section.title ~ " |"}}
-        {% endif %} {{ config.extra.socio_title | default(value='My Site') }}
-    </title>
+    <title>{{ macros::get_page_title() }}</title>
 </head>
 <body>
     <header>

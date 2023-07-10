@@ -1,3 +1,19 @@
+{% macro get_page_title() %}
+    {%- if page.title -%}
+        {{ page.title ~ " |" }}
+    {%- elif section.title -%}
+        {{ section.title ~ " |"}}
+    {%- endif %} {{ config.extra.socio_title | default(value='My Site') }}
+{% endmacro get_page_title %}
+
+{% macro get_page_description() %}
+    {%- if page.content -%}
+        {{ page.content | striptags | truncate(length=256) }}
+    {%- elif section.content -%}
+        {{ section.content | striptags | truncate(length=256) }}
+    {%- endif -%}
+{% endmacro get_page_description %}
+
 {% macro get_url_check(path) %}
     {% if path is starting_with("http://") or path is starting_with("https://") %}
         {{ path | safe }}
