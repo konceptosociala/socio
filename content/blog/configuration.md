@@ -10,6 +10,7 @@ Socio is a pretty much configurable theme, so you can tweak many website paramet
 * `socio_title` - main website title, which is visible in title bar along with page title like: `My page | My site title`
 * `socio_favicon` - website favicon path. It can be either relative or absolute (eg. https://...)
 * `socio_logo` - website logo path. It is located on the navbar. If not set, website title is displayed instead
+* `socio_animations` - enable animations with [animate.css](https://animate.style/)
 
 ## Navbar links
 
@@ -56,6 +57,7 @@ Socio is a pretty much configurable theme, so you can tweak many website paramet
 * `socio_banner_display` - defines whether homepage banner is displayed
 * `socio_banner_logo` - path to logo, which must be displayed on the banner
 * `socio_banner_logo_width` - width of the logo
+* `socio_banner_animation` - banner fade in animation like `bounce`, `flash` etc. For a full list look at [https://animate.style/](https://animate.style/)
 
 ## Social
 

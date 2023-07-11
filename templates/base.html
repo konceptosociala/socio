@@ -35,6 +35,9 @@
     <link href="{{ macros::get_url_check(path='navbar.css') | safe }}" rel="stylesheet" type="text/css">
     <link href="{{ macros::get_url_check(path='theme.css') | safe }}" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="{{ macros::get_url_check(path=config.extra.socio_favicon) }}" type="image/x-icon">
+    {% if config.extra.socio_animations == true %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    {% endif %}
     <title>{{ macros::get_page_title() }}</title>
 </head>
 <body>
