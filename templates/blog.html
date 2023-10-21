@@ -1,8 +1,8 @@
-{% extends "page.html" %}
+{%- extends "page.html" -%}
 .
-{% block page_content %}
+{%- block page_content -%}
 <div class="row">
-    {% for page in section.pages %}
+    {%- for page in section.pages -%}
     <div class="col-lg-6 col-md-12 col-sm-12 p-2 d-flex">
         <a class="post-link d-flex w-100" href="{{ page.permalink | safe }}">
             <div class="px-4 py-3 rounded-4 w-100" style="background: {{ config.extra.socio_post_bg }}">
@@ -13,7 +13,7 @@
             </div>
         </a>
     </div>
-    {% endfor %}
+    {%- endfor -%}
 </div>
 
-{% endblock %}
+{%- endblock -%}

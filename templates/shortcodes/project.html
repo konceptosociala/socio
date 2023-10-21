@@ -1,4 +1,4 @@
-{%- import "macros/macros.html" as macros %}
+{%- import "macros/macros.html" as macros -%}
 <div class="col-lg-4 col-md-6 col-sm-12 mb-3 d-flex">
     <div class="card text-bg-{{ config.extra.socio_project_bg }} p-0">
         <img src="{{ banner }}" class="card-img-top" alt="">
@@ -7,8 +7,8 @@
             <h6 class="card-subtitle mb-2 text-secondary">{{ subtitle }}</h6>
             <p class="card-text">{{ description }}</p>
             <div class="card-link-box mt-auto">
-                <a href="{{ macros::get_url_check_lang(path=project_page) }}" class="card-link">{{ trans(key="project_page", lang=lang) }}</a>
-                <a href="{{ github_page }}" class="card-link">GitHub</a>
+                <a href="{{ macros::get_url_check_lang(path=project_page) }}" class="card-link">{{ page_label }}</a>
+                {%- if github_page -%}<a href="{{ github_page }}" class="card-link">GitHub</a>{%- endif -%}
             </div>
         </div>
     </div>

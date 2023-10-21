@@ -80,7 +80,6 @@ repo = "konceptosociala/socio"
 theme = "icy-dark"
 
 [translations]
-project_page = "Project page"
 read_more = "Read more"
 banner_button = "Learn more"
 banner_heading = "Socio Zola Theme"
@@ -96,7 +95,6 @@ socio_on_github = "Socio on GitHub"
 [languages.ua]
 
 [languages.ua.translations]
-project_page = "Сторінка проєкту"
 read_more = "Детальніше"
 banner_button = "Дізнатися більше"
 banner_heading = "Socio тема для Zola"
@@ -112,7 +110,6 @@ socio_on_github = "Socio на GitHub"
 [languages.sr]
 
 [languages.sr.translations]
-project_page = "Stranica projekta"
 read_more = "Opširnije"
 banner_button = "Saznajte više"
 banner_heading = "Socio tema za Zola"

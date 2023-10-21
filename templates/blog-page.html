@@ -1,22 +1,22 @@
-{% extends "page.html" %}
+{%- extends "page.html" -%}
 
-{% block page_content %}
+{%- block page_content -%}
 <div class="post px-lg-5 mx-lg-5 mt-3">
     <p class="date">~~ {{ page.date }} ~~</p>
     <h1 class="title">{{ page.title }}</h1>
     <hr class="big-hr">
     {{ page.content | safe }}
 </div>
-{% if config.extra.socio_utterances %}
+{%- if config.extra.socio_utterances -%}
 <script src="https://utteranc.es/client.js"
         repo="{{ config.extra.socio_utterances.repo }}"
         issue-term="pathname"
-        {% if config.extra.socio_utterances.label %}
+        {%- if config.extra.socio_utterances.label -%}
         label="{{ config.extra.socio_utterances.label }}"
-        {% endif %}
+        {%- endif -%}
         theme="{{ config.extra.socio_utterances.theme }}"
         crossorigin="anonymous"
         async>
 </script>
-{% endif %}
-{% endblock page_content %}
+{%- endif -%}
+{%- endblock page_content -%}

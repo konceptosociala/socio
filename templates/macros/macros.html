@@ -1,38 +1,38 @@
-{% macro get_page_title() %}
+{%- macro get_page_title() -%}
     {%- if page.title -%}
         {{ page.title ~ " |" }}
     {%- elif section.title -%}
         {{ section.title ~ " |"}}
-    {%- endif %} {{ config.extra.socio_title | default(value='My Site') }}
-{% endmacro get_page_title %}
+    {%- endif -%} {{ config.extra.socio_title | default(value='My Site') }}
+{%- endmacro get_page_title -%}
 
-{% macro get_page_description() %}
+{%- macro get_page_description() -%}
     {%- if page.content -%}
         {{ page.content | striptags | truncate(length=256) }}
     {%- elif section.content -%}
         {{ section.content | striptags | truncate(length=256) }}
     {%- endif -%}
-{% endmacro get_page_description %}
+{%- endmacro get_page_description -%}
 
-{% macro get_url_check(path) %}
-    {% if path is starting_with("http://") or path is starting_with("https://") %}
+{%- macro get_url_check(path) -%}
+    {%- if path is starting_with("http://") or path is starting_with("https://") -%}
         {{ path | safe }}
-    {% else %}
+    {%- else -%}
         {{ get_url(path=path) | safe }}
-    {% endif %}
-{% endmacro get_url_check %}
+    {%- endif -%}
+{%- endmacro get_url_check -%}
 
-{% macro get_url_check_lang(path) %}
-    {% if path is starting_with("http://") or path is starting_with("https://") %}
+{%- macro get_url_check_lang(path) -%}
+    {%- if path is starting_with("http://") or path is starting_with("https://") -%}
         {{ path | safe }}
-    {% else %}
-        {% if lang == config.default_language %}
+    {%- else -%}
+        {%- if lang == config.default_language -%}
             {{ get_url(path=path) |  safe }}
-        {% else %}
+        {%- else -%}
             {{ get_url(path=lang ~ '/' ~ path | replace(from="//", to="/")) | safe }}
-        {% endif %}
-    {% endif %}
-{% endmacro get_url_check %}
+        {%- endif -%}
+    {%- endif -%}
+{%- endmacro get_url_check -%}
 
 {%- macro remove_lang_code(path, languages) -%}
     {%- for language in languages -%}

@@ -1,14 +1,14 @@
-{% extends "base.html" %}
+{%- extends "base.html" -%}
 
-{% block content %}
+{%- block content -%}
 <section class="section" style="background: {{ config.extra.socio_page_bg }};">
     <div class="container content" style="min-height: 90vh;">
-        {% if section.title %}
+        {%- if section.title -%}
         <h1 class="display-3 bold text-center">{{ section.title }}</h1>
         <hr class="small-hr mx-auto">
         <br>
-        {% endif %}
-        {% block page_content %} {% endblock %}
+        {%- endif -%}
+        {%- block page_content -%} {%- endblock -%}
         {{ section.content | default(value="") | safe }}
     </div>
     <div class="curve-section">
@@ -17,4 +17,4 @@
         </svg>
     </div>
 </section>
-{% endblock content %}
+{%- endblock content -%}

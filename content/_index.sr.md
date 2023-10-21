@@ -16,6 +16,7 @@ sort_by = "date"
             subtitle="Subtitle", 
             description="Description",
             project_page="#",
+            page_label="Stranica projekta",
             github_page="#"
         ) 
     }}
@@ -26,7 +27,7 @@ sort_by = "date"
             subtitle="Subtitle", 
             description="Description",
             project_page="#",
-            github_page="#"
+            page_label="Stranica projekta"
         ) 
     }}
     {{ 
@@ -36,6 +37,7 @@ sort_by = "date"
             subtitle="Subtitle", 
             description="Description",
             project_page="#",
+            page_label="Stranica projekta",
             github_page="#"
         ) 
     }}
