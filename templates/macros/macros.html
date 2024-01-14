@@ -1,8 +1,8 @@
 {%- macro get_page_title() -%}
     {%- if page.title -%}
-        {{ page.title ~ " |" }}
+        {{ page.title ~ " | " }}
     {%- elif section.title -%}
-        {{ section.title ~ " |"}}
+        {{ section.title ~ " | "}}
     {%- endif -%} {{ config.extra.socio_title | default(value='My Site') }}
 {%- endmacro get_page_title -%}
 

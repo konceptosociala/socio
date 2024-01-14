@@ -1,7 +1,7 @@
 {%- import "macros/macros.html" as macros -%}
 <div class="card rounded-pill text-bg-{{ config.extra.socio_pill_bg }} mx-auto mb-4" style="max-width: 18rem;">
     <div class="card-body">
-        <img class="img-fluid {%- if circle == true -%}rounded-circle{%- endif -%}" src="{{ banner }}" width=512>
+        <img class="img-fluid {% if circle == true -%}rounded-circle{%- endif -%}" src="{{ banner }}" width=512>
         <h1 class="card-title text-center mt-3">{{ title }}</h1>
         <p class="card-text mx-4 mt-2 ">{{ description }}</p>
         {%- if read_more -%}
